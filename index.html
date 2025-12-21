@@ -310,23 +310,6 @@ function drawMessage(){
   ctx.shadowBlur=0;
 }
 
-  /* ☝️ 點擊提示 */
-function drawHint(x,y){
-  ctx.strokeStyle="rgba(255,255,255,0.8)";
-  ctx.lineWidth=4;
-  ctx.beginPath();
-  ctx.arc(x,y,40,0,Math.PI*2);
-  ctx.stroke();
-  ctx.beginPath();
-  ctx.moveTo(x,y-50);
-  ctx.lineTo(x,y-20);
-  ctx.stroke();
-  ctx.font="36px sans-serif";
-  ctx.fillStyle="rgba(255,255,255,0.85)";
-  ctx.textAlign="center";
-  ctx.fillText("點擊螢幕",x,y-80);
-}
-
 // 主迴圈
 function loop(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
